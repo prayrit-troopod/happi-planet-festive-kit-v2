@@ -3937,7 +3937,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <!-- Festive Starter Kit gift box v2 (below FBT) (Troopod) -->
             <style>
-              .hp-fk3 { --teal: #006056; --ink: #0a1f1c; --gold: #f5a623; --gold-deep: #c98a12; --cream: #fff8ea; --line: #d4b062;
+              .hp-fk3 { container-type: inline-size; --teal: #006056; --ink: #0a1f1c; --gold: #f5a623; --gold-deep: #c98a12; --cream: #fff8ea; --line: #d4b062;
                 margin: 12px 0 4px; font-family: 'Poppins', sans-serif; color: var(--ink); }
               .hp-fk3__card { position: relative; display: block; text-decoration: none; color: inherit; overflow: hidden;
                 border: 1.5px solid var(--line); border-radius: 14px; padding: 16px 12px 0;
@@ -3960,7 +3960,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               .hp-fk3__eyebrow { display: block; font-size: 9.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 1px; }
               .hp-fk3__tag { flex-shrink: 0; font-size: 9.5px; font-weight: 700; color: #6b4a00; background: #ffe2a8; border-radius: 999px; padding: 2px 7px; white-space: nowrap; }
 
-              .hp-fk3__row { display: grid; grid-template-columns: 66px 18px 1fr; align-items: end; gap: 6px; }
+              .hp-fk3__row { display: grid; grid-template-columns: 62px 34px minmax(0, 1fr); align-items: end; gap: 0; }
 
               .hp-fk3__solo { text-align: center; padding-bottom: 8px; }
               .hp-fk3__solo-img { width: 62px; height: 62px; margin: 0 auto 4px; border-radius: 12px; overflow: hidden; background: #dbeced; border: 1.5px solid #c8d8d5; }
@@ -3968,10 +3968,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               .hp-fk3__solo-lbl { display: block; font-size: 9.5px; font-weight: 600; color: #4b5a57; line-height: 1.2; }
               .hp-fk3__solo-price { display: block; font-size: 13.5px; font-weight: 800; line-height: 1.2; }
 
-              .hp-fk3__or { align-self: center; margin-bottom: 20px; width: 18px; height: 18px; border-radius: 50%; background: #ffffff; border: 1px solid var(--line);
+              .hp-fk3__or { position: relative; align-self: stretch; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
+              .hp-fk3__or::before { content: ""; position: absolute; top: 6px; bottom: 0; left: 50%; border-left: 1px dashed var(--line); }
+              .hp-fk3__or span { position: relative; width: 20px; height: 20px; border-radius: 50%; background: var(--cream); border: 1px solid var(--line);
                 display: flex; align-items: center; justify-content: center; font-size: 8.5px; font-weight: 700; color: #6b5a33; }
 
-              .hp-fk3__kit { display: grid; grid-template-columns: 104px 1fr; align-items: end; gap: 8px; min-width: 0; }
+              .hp-fk3__kit { display: grid; grid-template-columns: 104px minmax(0, 1fr); align-items: end; gap: 10px; min-width: 0; padding-left: 6px; }
 
               /* gift box */
               .hp-fk3__box { position: relative; width: 104px; height: 88px; }
@@ -3995,7 +3997,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               .hp-fk3.is-in .hp-fk3__lid { transform: translate(10px, -42px) rotate(14deg); }
 
               .hp-fk3__kit-txt { padding-bottom: 8px; min-width: 0; }
-              .hp-fk3__kit-name { display: block; font-size: 12px; font-weight: 800; line-height: 1.2; }
+              .hp-fk3__kit-name { display: block; font-size: 11.5px; font-weight: 800; line-height: 1.2; }
               .hp-fk3__kit-price { display: block; margin-top: 1px; font-size: 18px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; color: var(--teal); }
               .hp-fk3__kit-sub { display: block; font-size: 10.5px; font-weight: 600; color: #6b5a33; line-height: 1.25; }
 
@@ -4009,9 +4011,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 .hp-fk3__card { padding: 15px 10px 0; }
                 .hp-fk3__foot { margin: 0 -10px; padding: 6px 10px; }
                 .hp-fk3__title { font-size: 13.5px; }
-                .hp-fk3__row { gap: 5px; }
-                .hp-fk3__kit { gap: 8px; }
+                .hp-fk3__kit { gap: 8px; padding-left: 4px; }
                 .hp-fk3__kit-price { font-size: 17px; }
+              }
+              @container (min-width: 480px) {
+                .hp-fk3__row { grid-template-columns: auto 72px auto; justify-content: center; }
+                .hp-fk3__solo-img { width: 72px; height: 72px; }
+                .hp-fk3__kit { padding-left: 0; gap: 16px; }
+                .hp-fk3__kit-name { font-size: 13px; }
+                .hp-fk3__kit-price { font-size: 21px; }
               }
               @media (prefers-reduced-motion: reduce) {
                 .hp-fk3__peek, .hp-fk3__lid, .hp-fk3__go svg, .hp-fk3__card { transition: none; }
@@ -4039,7 +4047,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="hp-fk3__solo-price">₹200</span>
                   </div>
 
-                  <span class="hp-fk3__or" aria-hidden="true">or</span>
+                  <span class="hp-fk3__or" aria-hidden="true"><span>or</span></span>
 
                   <div class="hp-fk3__kit">
                     <div class="hp-fk3__box" aria-hidden="true">
