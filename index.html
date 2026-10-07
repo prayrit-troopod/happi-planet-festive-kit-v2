@@ -47,8 +47,8 @@ src="https://www.facebook.com/tr?id=582633014140267&ev=PageView&noscript=1"
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("//www.happi-planet.com/cdn/fonts/poppins/poppins_n4.0ba78fa5af9b0e1a374041b3ceaadf0a43b41362.woff2") format("woff2"),
-       url("//www.happi-planet.com/cdn/fonts/poppins/poppins_n4.214741a72ff2596839fc9760ee7a770386cf16ca.woff") format("woff");
+  src: url("https://www.happi-planet.com/cdn/fonts/poppins/poppins_n4.0ba78fa5af9b0e1a374041b3ceaadf0a43b41362.woff2") format("woff2"),
+       url("https://www.happi-planet.com/cdn/fonts/poppins/poppins_n4.214741a72ff2596839fc9760ee7a770386cf16ca.woff") format("woff");
 }
 
   @font-face {
@@ -56,8 +56,8 @@ src="https://www.facebook.com/tr?id=582633014140267&ev=PageView&noscript=1"
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("//www.happi-planet.com/cdn/fonts/poppins/poppins_n7.56758dcf284489feb014a026f3727f2f20a54626.woff2") format("woff2"),
-       url("//www.happi-planet.com/cdn/fonts/poppins/poppins_n7.f34f55d9b3d3205d2cd6f64955ff4b36f0cfd8da.woff") format("woff");
+  src: url("https://www.happi-planet.com/cdn/fonts/poppins/poppins_n7.56758dcf284489feb014a026f3727f2f20a54626.woff2") format("woff2"),
+       url("https://www.happi-planet.com/cdn/fonts/poppins/poppins_n7.f34f55d9b3d3205d2cd6f64955ff4b36f0cfd8da.woff") format("woff");
 }
 
   @font-face {
@@ -65,8 +65,8 @@ src="https://www.facebook.com/tr?id=582633014140267&ev=PageView&noscript=1"
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("//www.happi-planet.com/cdn/fonts/poppins/poppins_n6.aa29d4918bc243723d56b59572e18228ed0786f6.woff2") format("woff2"),
-       url("//www.happi-planet.com/cdn/fonts/poppins/poppins_n6.5f815d845fe073750885d5b7e619ee00e8111208.woff") format("woff");
+  src: url("https://www.happi-planet.com/cdn/fonts/poppins/poppins_n6.aa29d4918bc243723d56b59572e18228ed0786f6.woff2") format("woff2"),
+       url("https://www.happi-planet.com/cdn/fonts/poppins/poppins_n6.5f815d845fe073750885d5b7e619ee00e8111208.woff") format("woff");
 }
 
   @font-face {
@@ -74,8 +74,8 @@ src="https://www.facebook.com/tr?id=582633014140267&ev=PageView&noscript=1"
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("//www.happi-planet.com/cdn/fonts/poppins/poppins_n7.56758dcf284489feb014a026f3727f2f20a54626.woff2") format("woff2"),
-       url("//www.happi-planet.com/cdn/fonts/poppins/poppins_n7.f34f55d9b3d3205d2cd6f64955ff4b36f0cfd8da.woff") format("woff");
+  src: url("https://www.happi-planet.com/cdn/fonts/poppins/poppins_n7.56758dcf284489feb014a026f3727f2f20a54626.woff2") format("woff2"),
+       url("https://www.happi-planet.com/cdn/fonts/poppins/poppins_n7.f34f55d9b3d3205d2cd6f64955ff4b36f0cfd8da.woff") format("woff");
 }
 
 
@@ -228,7 +228,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="form-persister">!function(){'use strict';const t='contact',e='new_comment',n=[[t,t],['blogs',e],['comments',e],[t,'customer']],o='password',r='form_key',c=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',o],s=()=>{try{return window.sessionStorage}catch{return}},i='__shopify_v',u=t=>t.elements[r],a=function(){const t=[...n].map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(',');var e;return e=t,()=>e?[...document.querySelectorAll(e)].map((t=>t.form)):[]}();function m(t){const e=u(t);a().includes(t)&&(!e||!e.value)&&function(t){try{if(!s())return;!function(t){const e=s();if(!e)return;const n=u(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){u(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:r})),t.elements[r].value=e}(t,e),function(t,e){const n=s();if(!n)return;const r=[...t.querySelectorAll(`input[type='${o}']`)].map((({name:t})=>t)),u=[...c,...r],a={};for(const[o,c]of new FormData(t).entries())u.includes(o)||(a[o]=c);n.setItem(e,JSON.stringify({[i]:1,action:t.action,data:a}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(t)}const f=t=>{if('true'===t.dataset.persistBound)return;const e=function(t,e){const n=function(t){return'function'==typeof t.submit?t.submit:HTMLFormElement.prototype.submit}(t).bind(t);return function(){let t;return()=>{t||(t=!0,(()=>{try{e(),n()}catch(t){(t=>{console.error('form submit failed',t)})(t)}})(),setTimeout((()=>t=!1),250))}}()}(t,(()=>{m(t)}));!function(t,e){if('function'==typeof t.submit&&'function'==typeof e)try{t.submit=e}catch{}}(t,e),t.addEventListener('submit',(t=>{t.preventDefault(),e()})),t.dataset.persistBound='true'};!function(){function t(t){const e=(t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form})(t);e&&m(e)}document.addEventListener('submit',t),document.addEventListener('DOMContentLoaded',(()=>{const e=a();for(const t of e)f(t);var n;n=document.body,new window.MutationObserver((t=>{for(const e of t)if('childList'===e.type&&e.addedNodes.length)for(const t of e.addedNodes)1===t.nodeType&&'FORM'===t.tagName&&a().includes(t)&&f(t)})).observe(n,{childList:!0,subtree:!0,attributes:!1}),document.removeEventListener('submit',t)}))}()}();</script>
 <script type="text/plain" data-preview-disabled integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="./assets/load_feature-1bd60354.js.download" crossorigin="anonymous"></script>
-<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "//www.happi-planet.com/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script type="text/plain" data-preview-disabled id="shopify-origin-trials" async="async" integrity="sha256-qJbe/jEZBHtr5W/BlA2cKAz3vkXu6vJQyLjgvgCC86g=" src="./assets/origin_trials-318ab40a.js.download" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
+<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "https://www.happi-planet.com/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script type="text/plain" data-preview-disabled id="shopify-origin-trials" async="async" integrity="sha256-qJbe/jEZBHtr5W/BlA2cKAz3vkXu6vJQyLjgvgCC86g=" src="./assets/origin_trials-318ab40a.js.download" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
 <script>
   window.Shopify = window.Shopify || {};
   window.Shopify.MCP = window.Shopify.MCP || {};
@@ -514,15 +514,15 @@ script.onerror = function(e) {
       theme_id: 164803739884,
       app_name: "storefront",
       context_url: window.location.href,
-      source_url: "//www.happi-planet.com/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js"});
+      source_url: "https://www.happi-planet.com/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js"});
 
   };
   scriptFallback.async = true;
-  scriptFallback.src = '//www.happi-planet.com/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js';
+  scriptFallback.src = 'https://www.happi-planet.com/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js';
   first.parentNode.insertBefore(scriptFallback, first);
 };
 script.async = true;
-script.src = '//www.happi-planet.com/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js';
+script.src = 'https://www.happi-planet.com/cdn/s/trekkie.storefront.51e69540e15035ae012ec8cc42e8f9cd792233a0.min.js';
 first.parentNode.insertBefore(script, first);
 
     };
@@ -554,7 +554,7 @@ first.parentNode.insertBefore(script, first);
 
     var eventsListenerScript = document.createElement('script');
     eventsListenerScript.async = true;
-    eventsListenerScript.src = "//www.happi-planet.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js";
+    eventsListenerScript.src = "https://www.happi-planet.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js";
     document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
 })();</script><script type="text/plain" data-preview-disabled async="" src="./assets/shop_events_listener-4e26a9ce.js.download"></script>
   <script>
@@ -3571,49 +3571,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
           <div class="product-gallery__slide" data-index="0">
             
-                <img src="./assets/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827(4).jpg" srcset="//www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=400 400w, //www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=600 600w, //www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="eager" fetchpriority="high" decoding="async">
+                <img src="./assets/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827(4).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=400 400w, https://www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=600 600w, https://www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="eager" fetchpriority="high" decoding="async">
               
           </div>
         
           <div class="product-gallery__slide" data-index="1">
             
-                <img src="./assets/Website_Images_Lime_Scale-04(1).jpg" srcset="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=400 400w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=600 600w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
+                <img src="./assets/Website_Images_Lime_Scale-04(1).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=400 400w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=600 600w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
               
           </div>
         
           <div class="product-gallery__slide" data-index="2">
             
-                <video playsinline="playsinline" controls="controls" muted="muted" preload="metadata" aria-label="Tap Cleaner &amp; Limescale Remover" poster="//www.happi-planet.com/cdn/shop/files/preview_images/d1cd897aa2a146a48c8d19817279ac9c.thumbnail.0000000000_800x.jpg?v=1749737701"><source src="//www.happi-planet.com/cdn/shop/videos/c/vp/d1cd897aa2a146a48c8d19817279ac9c/d1cd897aa2a146a48c8d19817279ac9c.HD-720p-3.0Mbps-49278100.mp4?v=0" type="video/mp4"><img src="./assets/d1cd897aa2a146a48c8d19817279ac9c.thumbnail.0000000000_800x.jpg"></video>
+                <video playsinline="playsinline" controls="controls" muted="muted" preload="metadata" aria-label="Tap Cleaner &amp; Limescale Remover" poster="https://www.happi-planet.com/cdn/shop/files/preview_images/d1cd897aa2a146a48c8d19817279ac9c.thumbnail.0000000000_800x.jpg?v=1749737701"><source src="https://www.happi-planet.com/cdn/shop/videos/c/vp/d1cd897aa2a146a48c8d19817279ac9c/d1cd897aa2a146a48c8d19817279ac9c.HD-720p-3.0Mbps-49278100.mp4?v=0" type="video/mp4"><img src="./assets/d1cd897aa2a146a48c8d19817279ac9c.thumbnail.0000000000_800x.jpg"></video>
               
           </div>
         
           <div class="product-gallery__slide" data-index="3">
             
-                <img src="./assets/Website_Images_Lime_Scale-03(1).jpg" srcset="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=400 400w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=600 600w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
+                <img src="./assets/Website_Images_Lime_Scale-03(1).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=400 400w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=600 600w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
               
           </div>
         
           <div class="product-gallery__slide" data-index="4">
             
-                <img src="./assets/Website_Images_Lime_Scale-05(1).jpg" srcset="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=400 400w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=600 600w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
+                <img src="./assets/Website_Images_Lime_Scale-05(1).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=400 400w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=600 600w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
               
           </div>
         
           <div class="product-gallery__slide" data-index="5">
             
-                <img src="./assets/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6(1).jpg" srcset="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=400 400w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=600 600w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
+                <img src="./assets/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6(1).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=400 400w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=600 600w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
               
           </div>
         
           <div class="product-gallery__slide" data-index="6">
             
-                <img src="./assets/Website_Images_Lime_Scale_2A-01(1).jpg" srcset="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=400 400w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=600 600w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
+                <img src="./assets/Website_Images_Lime_Scale_2A-01(1).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=400 400w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=600 600w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
               
           </div>
         
           <div class="product-gallery__slide" data-index="7">
             
-                <img src="./assets/1(1).5L_-_Website.jpg" srcset="//www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=400 400w, //www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=600 600w, //www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
+                <img src="./assets/1(1).5L_-_Website.jpg" srcset="https://www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=400 400w, https://www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=600 600w, https://www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Tap Cleaner &amp; Limescale Remover" width="800" height="1049" loading="lazy" decoding="async">
               
           </div>
         
@@ -4277,11 +4277,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="bai_card">
               <div class="ba_image_section">
                 <p class="ba_overlay_lay_text" style="opacity: 1;">After</p>
-                <img src="./assets/After-09.jpg" alt="After" srcset="//www.happi-planet.com/cdn/shop/files/After-09.jpg?v=1768562828&amp;width=352 352w, //www.happi-planet.com/cdn/shop/files/After-09.jpg?v=1768562828&amp;width=832 832w, //www.happi-planet.com/cdn/shop/files/After-09.jpg?v=1768562828&amp;width=1200 1200w, //www.happi-planet.com/cdn/shop/files/After-09.jpg?v=1768562828&amp;width=1700 1700w" width="1700" height="2229" loading="lazy">
+                <img src="./assets/After-09.jpg" alt="After" srcset="https://www.happi-planet.com/cdn/shop/files/After-09.jpg?v=1768562828&amp;width=352 352w, https://www.happi-planet.com/cdn/shop/files/After-09.jpg?v=1768562828&amp;width=832 832w, https://www.happi-planet.com/cdn/shop/files/After-09.jpg?v=1768562828&amp;width=1200 1200w, https://www.happi-planet.com/cdn/shop/files/After-09.jpg?v=1768562828&amp;width=1700 1700w" width="1700" height="2229" loading="lazy">
 
                 <p class="ba_overlay_text text_2" style="opacity: 1;">Before</p>
                 <div class="resize" style="width: 50%; border-right: 1px solid #000">
-                  <img src="./assets/Before-09.jpg" alt="Before" srcset="//www.happi-planet.com/cdn/shop/files/Before-09.jpg?v=1768562829&amp;width=352 352w, //www.happi-planet.com/cdn/shop/files/Before-09.jpg?v=1768562829&amp;width=832 832w, //www.happi-planet.com/cdn/shop/files/Before-09.jpg?v=1768562829&amp;width=1200 1200w, //www.happi-planet.com/cdn/shop/files/Before-09.jpg?v=1768562829&amp;width=1700 1700w" width="1700" height="2229" loading="lazy" style="width: 400px; height: 400px;">
+                  <img src="./assets/Before-09.jpg" alt="Before" srcset="https://www.happi-planet.com/cdn/shop/files/Before-09.jpg?v=1768562829&amp;width=352 352w, https://www.happi-planet.com/cdn/shop/files/Before-09.jpg?v=1768562829&amp;width=832 832w, https://www.happi-planet.com/cdn/shop/files/Before-09.jpg?v=1768562829&amp;width=1200 1200w, https://www.happi-planet.com/cdn/shop/files/Before-09.jpg?v=1768562829&amp;width=1700 1700w" width="1700" height="2229" loading="lazy" style="width: 400px; height: 400px;">
                 </div>
 
                 <span class="handel" style="left: 50%"></span>
@@ -4798,49 +4798,49 @@ Each product comes in a bottle which is made from 100% recycled plastic that's n
       
         <div class="product-gallery__modal-slide" data-index="0">
           
-              <img src="./assets/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827(6).jpg" srcset="//www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=1000 1000w, //www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=1600 1600w, //www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
+              <img src="./assets/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827(6).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=1000 1000w, https://www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=1600 1600w, https://www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
             
         </div>
       
         <div class="product-gallery__modal-slide" data-index="1">
           
-              <img src="./assets/Website_Images_Lime_Scale-04(2).jpg" srcset="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=1000 1000w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=1600 1600w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
+              <img src="./assets/Website_Images_Lime_Scale-04(2).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=1000 1000w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=1600 1600w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-04.jpg?v=1749737821&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
             
         </div>
       
         <div class="product-gallery__modal-slide" data-index="2">
           
-              <video playsinline="playsinline" controls="controls" muted="muted" preload="metadata" aria-label="Tap Cleaner &amp; Limescale Remover" poster="//www.happi-planet.com/cdn/shop/files/preview_images/d1cd897aa2a146a48c8d19817279ac9c.thumbnail.0000000000_1600x.jpg?v=1749737701"><source src="//www.happi-planet.com/cdn/shop/videos/c/vp/d1cd897aa2a146a48c8d19817279ac9c/d1cd897aa2a146a48c8d19817279ac9c.HD-720p-3.0Mbps-49278100.mp4?v=0" type="video/mp4"><img src="./assets/d1cd897aa2a146a48c8d19817279ac9c.thumbnail.0000000000_1600x.jpg"></video>
+              <video playsinline="playsinline" controls="controls" muted="muted" preload="metadata" aria-label="Tap Cleaner &amp; Limescale Remover" poster="https://www.happi-planet.com/cdn/shop/files/preview_images/d1cd897aa2a146a48c8d19817279ac9c.thumbnail.0000000000_1600x.jpg?v=1749737701"><source src="https://www.happi-planet.com/cdn/shop/videos/c/vp/d1cd897aa2a146a48c8d19817279ac9c/d1cd897aa2a146a48c8d19817279ac9c.HD-720p-3.0Mbps-49278100.mp4?v=0" type="video/mp4"><img src="./assets/d1cd897aa2a146a48c8d19817279ac9c.thumbnail.0000000000_1600x.jpg"></video>
             
         </div>
       
         <div class="product-gallery__modal-slide" data-index="3">
           
-              <img src="./assets/Website_Images_Lime_Scale-03(2).jpg" srcset="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=1000 1000w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=1600 1600w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
+              <img src="./assets/Website_Images_Lime_Scale-03(2).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=1000 1000w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=1600 1600w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-03.jpg?v=1749737774&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
             
         </div>
       
         <div class="product-gallery__modal-slide" data-index="4">
           
-              <img src="./assets/Website_Images_Lime_Scale-05(2).jpg" srcset="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=1000 1000w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=1600 1600w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
+              <img src="./assets/Website_Images_Lime_Scale-05(2).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=1000 1000w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=1600 1600w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-05.jpg?v=1749737774&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
             
         </div>
       
         <div class="product-gallery__modal-slide" data-index="5">
           
-              <img src="./assets/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6(2).jpg" srcset="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=1000 1000w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=1600 1600w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
+              <img src="./assets/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6(2).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=1000 1000w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=1600 1600w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale-02_20d2eae2-9fb0-4f58-907c-6374f430e0f6.jpg?v=1749737774&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
             
         </div>
       
         <div class="product-gallery__modal-slide" data-index="6">
           
-              <img src="./assets/Website_Images_Lime_Scale_2A-01(2).jpg" srcset="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=1000 1000w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=1600 1600w, //www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
+              <img src="./assets/Website_Images_Lime_Scale_2A-01(2).jpg" srcset="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=1000 1000w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=1600 1600w, https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
             
         </div>
       
         <div class="product-gallery__modal-slide" data-index="7">
           
-              <img src="./assets/1(2).5L_-_Website.jpg" srcset="//www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=1000 1000w, //www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=1600 1600w, //www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
+              <img src="./assets/1(2).5L_-_Website.jpg" srcset="https://www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=1000 1000w, https://www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=1600 1600w, https://www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=2000 2000w" sizes="100vw" alt="Tap Cleaner &amp; Limescale Remover" loading="lazy" decoding="async">
             
         </div>
       
@@ -5981,7 +5981,7 @@ Each product comes in a bottle which is made from 100% recycled plastic that's n
       </div><div class="floating-atc__pack" id="floating-pack">
           <div class="floating-atc__pack-panel" id="floating-pack-panel" role="radiogroup" aria-label="Choose your pack" aria-hidden="true">
             <div class="pack-panel__inner">
-              <button type="button" class="pack-option is-selected" role="radio" aria-checked="true" data-pack-label="Pack of 1" data-variant-id="45943964860652" data-quantity="1" data-price="₹200" data-compare="₹249" data-pack-option="pack_1" data-value="200.0" data-title="Tap Cleaner &amp; Limescale Remover | 500 ML" data-img="//www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=60">
+              <button type="button" class="pack-option is-selected" role="radio" aria-checked="true" data-pack-label="Pack of 1" data-variant-id="45943964860652" data-quantity="1" data-price="₹200" data-compare="₹249" data-pack-option="pack_1" data-value="200.0" data-title="Tap Cleaner &amp; Limescale Remover | 500 ML" data-img="https://www.happi-planet.com/cdn/shop/files/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827.jpg?v=1738842855&amp;width=60">
                 <span class="pack-option__check" aria-hidden="true">✓</span>
                 <span class="pack-option__body">
                   <span class="pack-option__row">
@@ -5991,7 +5991,7 @@ Each product comes in a bottle which is made from 100% recycled plastic that's n
                   <span class="pack-option__row"><span class="pack-option__mrp">MRP <s>₹249</s></span><span class="pack-option__save">Save ₹49 (19% OFF)</span></span>
                 </span>
               </button>
-              <button type="button" class="pack-option" role="radio" aria-checked="false" data-pack-label="Pack of 2" data-variant-id="45972366328044" data-quantity="1" data-price="₹379" data-compare="₹598" data-pack-option="pack_2" data-value="379.0" data-title="Tap Cleaner &amp; Limescale Remover - Pack of 2" data-img="//www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=60">
+              <button type="button" class="pack-option" role="radio" aria-checked="false" data-pack-label="Pack of 2" data-variant-id="45972366328044" data-quantity="1" data-price="₹379" data-compare="₹598" data-pack-option="pack_2" data-value="379.0" data-title="Tap Cleaner &amp; Limescale Remover - Pack of 2" data-img="https://www.happi-planet.com/cdn/shop/files/Website_Images_Lime_Scale_2A-01.jpg?v=1738819120&amp;width=60">
                 <span class="pack-option__check" aria-hidden="true">✓</span>
                 <span class="pack-option__body">
                   <span class="pack-option__row">
@@ -6001,7 +6001,7 @@ Each product comes in a bottle which is made from 100% recycled plastic that's n
                   <span class="pack-option__row"><span class="pack-option__mrp">MRP <s>₹598</s></span><span class="pack-option__save">Save ₹219 (36% OFF)</span></span>
                 </span>
               </button>
-              <button type="button" class="pack-option" role="radio" aria-checked="false" data-pack-label="1.5L" data-variant-id="46883683238124" data-quantity="1" data-price="₹399" data-compare="₹499" data-pack-option="pack_3" data-value="399.0" data-title="Tap Cleaner &amp; Limescale Remover | 1.5L" data-img="//www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=60">
+              <button type="button" class="pack-option" role="radio" aria-checked="false" data-pack-label="1.5L" data-variant-id="46883683238124" data-quantity="1" data-price="₹399" data-compare="₹499" data-pack-option="pack_3" data-value="399.0" data-title="Tap Cleaner &amp; Limescale Remover | 1.5L" data-img="https://www.happi-planet.com/cdn/shop/files/1.5L_-_Website.jpg?v=1776350507&amp;width=60">
                 <span class="pack-option__check" aria-hidden="true">✓</span>
                 <span class="pack-option__body">
                   <span class="pack-option__row">
