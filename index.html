@@ -3664,6 +3664,155 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
           
 
+
+            <!-- Festive Starter Kit gift box v2 (above FBT) (Troopod) -->
+            <style>
+              .hp-fk3 { container-type: inline-size; --teal: #006056; --ink: #0a1f1c; --gold: #f5a623; --gold-deep: #c98a12; --cream: #fff8ea; --line: #d4b062;
+                margin: 12px 0 4px; font-family: 'Poppins', sans-serif; color: var(--ink); }
+              .hp-fk3__card { position: relative; display: block; text-decoration: none; color: inherit; overflow: hidden;
+                border: 1.5px solid var(--line); border-radius: 14px; padding: 16px 12px 0;
+                background: radial-gradient(circle at 85% 30%, rgba(245, 166, 35, 0.18), transparent 50%), var(--cream);
+                transition: box-shadow 0.3s ease, border-color 0.3s ease; }
+              .hp-fk3__card:hover { border-color: #b8862b; box-shadow: 0 10px 24px -14px rgba(140, 96, 20, 0.6); }
+              .hp-fk3__card:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+
+              /* marigold toran along the top edge */
+              .hp-fk3__toran { position: absolute; top: 0; left: 0; right: 0; height: 12px; pointer-events: none;
+                background:
+                  radial-gradient(circle at 9px 4px, #f5a623 4.2px, transparent 4.8px) 0 0 / 36px 12px repeat-x,
+                  radial-gradient(circle at 27px 5px, #e8590c 3.6px, transparent 4.2px) 0 0 / 36px 12px repeat-x,
+                  radial-gradient(ellipse 2.2px 3.6px at 18px 7px, #3f8f4a 98%, transparent) 0 0 / 36px 12px repeat-x,
+                  linear-gradient(#b8862b, #b8862b) 0 3px / 100% 1px no-repeat; }
+
+              .hp-fk3__head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
+              .hp-fk3__title { margin: 0; font-size: 14px; font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; }
+              .hp-fk3__title b { color: var(--teal); }
+              .hp-fk3__eyebrow { display: block; font-size: 9.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 1px; }
+              .hp-fk3__tag { flex-shrink: 0; font-size: 9.5px; font-weight: 700; color: #6b4a00; background: #ffe2a8; border-radius: 999px; padding: 2px 7px; white-space: nowrap; }
+
+              .hp-fk3__row { display: block; padding-top: 26px; }
+
+              .hp-fk3__kit { display: grid; grid-template-columns: 104px minmax(0, 1fr); align-items: end; gap: 14px; min-width: 0; padding-left: 4px; }
+
+              /* gift box */
+              .hp-fk3__box { position: relative; width: 104px; height: 88px; }
+              .hp-fk3__peek { position: absolute; bottom: 18px; width: 42px; height: 42px; border-radius: 10px; overflow: hidden; background: #dbeced;
+                border: 2px solid #ffffff; box-shadow: 0 2px 6px rgba(10, 31, 28, 0.15); transform: translateY(26px) rotate(var(--r)); opacity: 0;
+                transition: transform 0.7s cubic-bezier(.2, .9, .25, 1.15), opacity 0.4s ease; transition-delay: var(--d); }
+              .hp-fk3__peek img { width: 100%; height: 100%; object-fit: cover; display: block; }
+              .hp-fk3__peek:nth-child(1) { left: 0;    --r: -12deg; --d: 0.15s; z-index: 2; }
+              .hp-fk3__peek:nth-child(2) { left: 31px; --r: 0deg;   --d: 0.25s; z-index: 3; bottom: 24px; }
+              .hp-fk3__peek:nth-child(3) { left: 62px; --r: 12deg;  --d: 0.35s; z-index: 2; }
+              .hp-fk3__body { position: absolute; left: 4px; right: 4px; bottom: 0; height: 32px; border-radius: 3px 3px 8px 8px; z-index: 4;
+                background: linear-gradient(90deg, transparent 42%, var(--gold) 42%, var(--gold) 58%, transparent 58%), linear-gradient(160deg, #0a7a6d, var(--teal) 60%, #004a42); }
+              .hp-fk3__lid { position: absolute; left: 0; right: 0; bottom: 28px; height: 12px; border-radius: 4px; z-index: 1; transform-origin: 90% 100%;
+                background: linear-gradient(90deg, transparent 42%, #ffc65a 42%, #ffc65a 58%, transparent 58%), linear-gradient(#0a7a6d, #005b51);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18); transition: transform 0.6s cubic-bezier(.3, 1.4, .5, 1); }
+              .hp-fk3__bow { position: absolute; left: 50%; top: -11px; width: 30px; height: 13px; margin-left: -15px; }
+              .hp-fk3__bow::before, .hp-fk3__bow::after { content: ""; position: absolute; top: 0; width: 15px; height: 12px; border: 3px solid #ffc65a; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; box-sizing: border-box; }
+              .hp-fk3__bow::before { left: 0; transform: rotate(-18deg); }
+              .hp-fk3__bow::after { right: 0; transform: rotate(18deg); }
+              .hp-fk3.is-in .hp-fk3__peek { transform: translateY(0) rotate(var(--r)); opacity: 1; }
+              .hp-fk3.is-in .hp-fk3__lid { transform: translate(10px, -42px) rotate(14deg); }
+
+              .hp-fk3__kit-txt { padding-bottom: 8px; min-width: 0; }
+              .hp-fk3__kit-name { display: block; font-size: 11.5px; font-weight: 800; line-height: 1.2; }
+              .hp-fk3__kit-price { display: block; margin-top: 1px; font-size: 18px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; color: var(--teal); }
+              .hp-fk3__kit-sub { display: block; font-size: 10.5px; font-weight: 600; color: #6b5a33; line-height: 1.25; }
+
+              .hp-fk3__foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 0 -12px; padding: 6px 12px;
+                border-top: 1px dashed var(--line); background: rgba(255, 226, 168, 0.35); font-size: 10.5px; font-weight: 600; color: #6b5a33; }
+              .hp-fk3__go { display: inline-flex; align-items: center; gap: 3px; color: var(--teal); font-weight: 700; white-space: nowrap; border-bottom: 1px solid currentColor; }
+              .hp-fk3__go svg { width: 12px; height: 12px; transition: transform 0.25s ease; }
+              .hp-fk3__card:hover .hp-fk3__go svg { transform: translateX(3px); }
+
+              @media (max-width: 400px) {
+                .hp-fk3__card { padding: 15px 10px 0; }
+                .hp-fk3__foot { margin: 0 -10px; padding: 6px 10px; }
+                .hp-fk3__title { font-size: 13.5px; }
+                .hp-fk3__kit-price { font-size: 17px; }
+              }
+              @container (min-width: 480px) {
+                .hp-fk3__card { padding: 20px 14px 0; border-radius: 16px; }
+                .hp-fk3__head { margin-bottom: 8px; }
+                .hp-fk3__row { padding-top: 50px; }
+                .hp-fk3__eyebrow { font-size: 10.5px; margin-bottom: 2px; }
+                .hp-fk3__title { font-size: 16px; }
+                .hp-fk3__tag { font-size: 10px; padding: 3px 8px; }
+                .hp-fk3__kit { grid-template-columns: 120px auto; gap: 12px; padding-left: 0; }
+                .hp-fk3__box { transform: scale(1.15); transform-origin: bottom left; margin-top: -13px; }
+                .hp-fk3__kit-txt { padding-bottom: 12px; }
+                .hp-fk3__kit-name { font-size: 13px; }
+                .hp-fk3__kit-price { font-size: 22px; margin-top: 2px; }
+                .hp-fk3__kit-sub { font-size: 11px; }
+                .hp-fk3__foot { margin: 0 -14px; padding: 9px 14px; font-size: 11.5px; }
+              }
+              @media (prefers-reduced-motion: reduce) {
+                .hp-fk3__peek, .hp-fk3__lid, .hp-fk3__go svg, .hp-fk3__card { transition: none; }
+              }
+            </style>
+
+            <div class="hp-fk3" data-hp-festive-kit-v2>
+              <!-- TODO: replace href with the live Festive Starter Kit product URL -->
+              <a class="hp-fk3__card" href="/products/festive-starter-kit" data-hp-fk3-link aria-label="Festive special: Starter Kit, 5 products at ₹499. View the festive kit">
+                <span class="hp-fk3__toran" aria-hidden="true"></span>
+                <div class="hp-fk3__head">
+                  <div>
+                    <span class="hp-fk3__eyebrow">Festive special</span>
+                    <p class="hp-fk3__title">Get 5 products at <b>₹499</b></p>
+                  </div>
+                  <span class="hp-fk3__tag">Limited time</span>
+                </div>
+
+                <div class="hp-fk3__row">
+
+                  <div class="hp-fk3__kit">
+                    <div class="hp-fk3__box" aria-hidden="true">
+                      <!-- TODO: swap for products actually in the kit -->
+                      <span class="hp-fk3__peek"><img src="./assets/KitchenCleanerWebsiteImages-01.jpg" alt="" loading="lazy"></span>
+                      <span class="hp-fk3__peek"><img src="./assets/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827(5).jpg" alt="" loading="lazy"></span>
+                      <span class="hp-fk3__peek"><img src="./assets/Website_Images_Metal_Cleaner-01(1).jpg" alt="" loading="lazy"></span>
+                      <span class="hp-fk3__lid"><span class="hp-fk3__bow"></span></span>
+                      <span class="hp-fk3__body"></span>
+                    </div>
+                    <div class="hp-fk3__kit-txt">
+                      <span class="hp-fk3__kit-name">Festive Starter Kit</span>
+                      <span class="hp-fk3__kit-price">₹499</span>
+                      <span class="hp-fk3__kit-sub">5 products, ~₹100 each</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hp-fk3__foot">
+                  <span>Perfect for gifting this season</span>
+                  <span class="hp-fk3__go">View festive kit
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <script>
+              (function () {
+                var root = document.querySelector('[data-hp-festive-kit-v2]');
+                if (!root) return;
+                if ('IntersectionObserver' in window) {
+                  var io = new IntersectionObserver(function (entries) {
+                    if (entries[0].isIntersecting) { root.classList.add('is-in'); io.disconnect(); }
+                  }, { threshold: 0.5 });
+                  io.observe(root);
+                } else {
+                  root.classList.add('is-in');
+                }
+                root.querySelector('[data-hp-fk3-link]').addEventListener('click', function () {
+                  try {
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({ event: 'festive_kit_click', variant: 'v2_giftbox', source: 'pdp_tap_cleaner_above_fbt' });
+                  } catch (e) {}
+                });
+              })();
+            </script>
+            <!-- /Festive Starter Kit gift box v2 (above FBT) -->
+
             <div class="prod__kc-fbt" data-kc-fbt="" data-offer2-total="37900" data-offer3-total="54900" data-cart-redirect="1" data-kc-fbt-inited="1">
               <div class="kc-fbt__header">
                 <h3 class="kc-fbt__heading">Frequently Bought Together</h3>
@@ -3934,183 +4083,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 recalc();
               })();
             </script>
-
-            <!-- Festive Starter Kit gift box v2 (below FBT) (Troopod) -->
-            <style>
-              .hp-fk3 { container-type: inline-size; --teal: #006056; --ink: #0a1f1c; --gold: #f5a623; --gold-deep: #c98a12; --cream: #fff8ea; --line: #d4b062;
-                margin: 12px 0 4px; font-family: 'Poppins', sans-serif; color: var(--ink); }
-              .hp-fk3__card { position: relative; display: block; text-decoration: none; color: inherit; overflow: hidden;
-                border: 1.5px solid var(--line); border-radius: 14px; padding: 16px 12px 0;
-                background: radial-gradient(circle at 85% 30%, rgba(245, 166, 35, 0.18), transparent 50%), var(--cream);
-                transition: box-shadow 0.3s ease, border-color 0.3s ease; }
-              .hp-fk3__card:hover { border-color: #b8862b; box-shadow: 0 10px 24px -14px rgba(140, 96, 20, 0.6); }
-              .hp-fk3__card:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
-
-              /* marigold toran along the top edge */
-              .hp-fk3__toran { position: absolute; top: 0; left: 0; right: 0; height: 12px; pointer-events: none;
-                background:
-                  radial-gradient(circle at 9px 4px, #f5a623 4.2px, transparent 4.8px) 0 0 / 36px 12px repeat-x,
-                  radial-gradient(circle at 27px 5px, #e8590c 3.6px, transparent 4.2px) 0 0 / 36px 12px repeat-x,
-                  radial-gradient(ellipse 2.2px 3.6px at 18px 7px, #3f8f4a 98%, transparent) 0 0 / 36px 12px repeat-x,
-                  linear-gradient(#b8862b, #b8862b) 0 3px / 100% 1px no-repeat; }
-
-              .hp-fk3__head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
-              .hp-fk3__title { margin: 0; font-size: 14px; font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; }
-              .hp-fk3__title b { color: var(--teal); }
-              .hp-fk3__eyebrow { display: block; font-size: 9.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 1px; }
-              .hp-fk3__tag { flex-shrink: 0; font-size: 9.5px; font-weight: 700; color: #6b4a00; background: #ffe2a8; border-radius: 999px; padding: 2px 7px; white-space: nowrap; }
-
-              .hp-fk3__row { display: grid; grid-template-columns: 62px 34px minmax(0, 1fr); align-items: end; gap: 0; }
-
-              .hp-fk3__solo { text-align: center; padding-bottom: 8px; }
-              .hp-fk3__solo-img { width: 62px; height: 62px; margin: 0 auto 4px; border-radius: 12px; overflow: hidden; background: #dbeced; border: 1.5px solid #c8d8d5; }
-              .hp-fk3__solo-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-              .hp-fk3__solo-lbl { display: block; font-size: 9.5px; font-weight: 600; color: #4b5a57; line-height: 1.2; }
-              .hp-fk3__solo-price { display: block; font-size: 13.5px; font-weight: 800; line-height: 1.2; }
-
-              .hp-fk3__or { position: relative; align-self: stretch; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
-              .hp-fk3__or::before { content: ""; position: absolute; top: 6px; bottom: 0; left: 50%; border-left: 1px dashed var(--line); }
-              .hp-fk3__or span { position: relative; width: 20px; height: 20px; border-radius: 50%; background: var(--cream); border: 1px solid var(--line);
-                display: flex; align-items: center; justify-content: center; font-size: 8.5px; font-weight: 700; color: #6b5a33; }
-
-              .hp-fk3__kit { display: grid; grid-template-columns: 104px minmax(0, 1fr); align-items: end; gap: 10px; min-width: 0; padding-left: 6px; }
-
-              /* gift box */
-              .hp-fk3__box { position: relative; width: 104px; height: 88px; }
-              .hp-fk3__peek { position: absolute; bottom: 18px; width: 42px; height: 42px; border-radius: 10px; overflow: hidden; background: #dbeced;
-                border: 2px solid #ffffff; box-shadow: 0 2px 6px rgba(10, 31, 28, 0.15); transform: translateY(26px) rotate(var(--r)); opacity: 0;
-                transition: transform 0.7s cubic-bezier(.2, .9, .25, 1.15), opacity 0.4s ease; transition-delay: var(--d); }
-              .hp-fk3__peek img { width: 100%; height: 100%; object-fit: cover; display: block; }
-              .hp-fk3__peek:nth-child(1) { left: 0;    --r: -12deg; --d: 0.15s; z-index: 2; }
-              .hp-fk3__peek:nth-child(2) { left: 31px; --r: 0deg;   --d: 0.25s; z-index: 3; bottom: 24px; }
-              .hp-fk3__peek:nth-child(3) { left: 62px; --r: 12deg;  --d: 0.35s; z-index: 2; }
-              .hp-fk3__body { position: absolute; left: 4px; right: 4px; bottom: 0; height: 32px; border-radius: 3px 3px 8px 8px; z-index: 4;
-                background: linear-gradient(90deg, transparent 42%, var(--gold) 42%, var(--gold) 58%, transparent 58%), linear-gradient(160deg, #0a7a6d, var(--teal) 60%, #004a42); }
-              .hp-fk3__lid { position: absolute; left: 0; right: 0; bottom: 28px; height: 12px; border-radius: 4px; z-index: 1; transform-origin: 90% 100%;
-                background: linear-gradient(90deg, transparent 42%, #ffc65a 42%, #ffc65a 58%, transparent 58%), linear-gradient(#0a7a6d, #005b51);
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18); transition: transform 0.6s cubic-bezier(.3, 1.4, .5, 1); }
-              .hp-fk3__bow { position: absolute; left: 50%; top: -11px; width: 30px; height: 13px; margin-left: -15px; }
-              .hp-fk3__bow::before, .hp-fk3__bow::after { content: ""; position: absolute; top: 0; width: 15px; height: 12px; border: 3px solid #ffc65a; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; box-sizing: border-box; }
-              .hp-fk3__bow::before { left: 0; transform: rotate(-18deg); }
-              .hp-fk3__bow::after { right: 0; transform: rotate(18deg); }
-              .hp-fk3.is-in .hp-fk3__peek { transform: translateY(0) rotate(var(--r)); opacity: 1; }
-              .hp-fk3.is-in .hp-fk3__lid { transform: translate(10px, -42px) rotate(14deg); }
-
-              .hp-fk3__kit-txt { padding-bottom: 8px; min-width: 0; }
-              .hp-fk3__kit-name { display: block; font-size: 11.5px; font-weight: 800; line-height: 1.2; }
-              .hp-fk3__kit-price { display: block; margin-top: 1px; font-size: 18px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; color: var(--teal); }
-              .hp-fk3__kit-sub { display: block; font-size: 10.5px; font-weight: 600; color: #6b5a33; line-height: 1.25; }
-
-              .hp-fk3__foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 0 -12px; padding: 6px 12px;
-                border-top: 1px dashed var(--line); background: rgba(255, 226, 168, 0.35); font-size: 10.5px; font-weight: 600; color: #6b5a33; }
-              .hp-fk3__go { display: inline-flex; align-items: center; gap: 3px; color: var(--teal); font-weight: 700; white-space: nowrap; border-bottom: 1px solid currentColor; }
-              .hp-fk3__go svg { width: 12px; height: 12px; transition: transform 0.25s ease; }
-              .hp-fk3__card:hover .hp-fk3__go svg { transform: translateX(3px); }
-
-              @media (max-width: 400px) {
-                .hp-fk3__card { padding: 15px 10px 0; }
-                .hp-fk3__foot { margin: 0 -10px; padding: 6px 10px; }
-                .hp-fk3__title { font-size: 13.5px; }
-                .hp-fk3__kit { gap: 8px; padding-left: 4px; }
-                .hp-fk3__kit-price { font-size: 17px; }
-              }
-              @container (min-width: 480px) {
-                .hp-fk3__card { padding: 20px 14px 0; border-radius: 16px; }
-                .hp-fk3__head { margin-bottom: 12px; }
-                .hp-fk3__eyebrow { font-size: 10.5px; margin-bottom: 2px; }
-                .hp-fk3__title { font-size: 16px; }
-                .hp-fk3__tag { font-size: 10px; padding: 3px 8px; }
-                .hp-fk3__row { grid-template-columns: 76px 52px auto; justify-content: start; }
-                .hp-fk3__solo { padding-bottom: 12px; }
-                .hp-fk3__solo-img { width: 64px; height: 64px; margin-bottom: 6px; }
-                .hp-fk3__solo-lbl { font-size: 10.5px; }
-                .hp-fk3__solo-price { font-size: 15px; }
-                .hp-fk3__or { margin-bottom: 12px; }
-                .hp-fk3__or span { width: 22px; height: 22px; font-size: 9.5px; }
-                .hp-fk3__kit { grid-template-columns: 120px auto; gap: 12px; padding-left: 0; }
-                .hp-fk3__box { transform: scale(1.15); transform-origin: bottom left; margin-top: -13px; }
-                .hp-fk3__kit-txt { padding-bottom: 12px; }
-                .hp-fk3__kit-name { font-size: 13px; }
-                .hp-fk3__kit-price { font-size: 22px; margin-top: 2px; }
-                .hp-fk3__kit-sub { font-size: 11px; }
-                .hp-fk3__foot { margin: 0 -14px; padding: 9px 14px; font-size: 11.5px; }
-              }
-              @media (prefers-reduced-motion: reduce) {
-                .hp-fk3__peek, .hp-fk3__lid, .hp-fk3__go svg, .hp-fk3__card { transition: none; }
-              }
-            </style>
-
-            <div class="hp-fk3" data-hp-festive-kit-v2>
-              <!-- TODO: replace href with the live Festive Starter Kit product URL -->
-              <a class="hp-fk3__card" href="/products/festive-starter-kit" data-hp-fk3-link aria-label="Festive special: Starter Kit, 5 products at ₹499. View the festive kit">
-                <span class="hp-fk3__toran" aria-hidden="true"></span>
-                <div class="hp-fk3__head">
-                  <div>
-                    <span class="hp-fk3__eyebrow">Festive special</span>
-                    <p class="hp-fk3__title">Get 5 products at <b>₹499</b></p>
-                  </div>
-                  <span class="hp-fk3__tag">Limited time</span>
-                </div>
-
-                <div class="hp-fk3__row">
-                  <div class="hp-fk3__solo">
-                    <div class="hp-fk3__solo-img">
-                      <img src="./assets/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827(5).jpg" alt="" loading="lazy">
-                    </div>
-                    <span class="hp-fk3__solo-lbl">This bottle</span>
-                    <span class="hp-fk3__solo-price">₹200</span>
-                  </div>
-
-                  <span class="hp-fk3__or" aria-hidden="true"><span>or</span></span>
-
-                  <div class="hp-fk3__kit">
-                    <div class="hp-fk3__box" aria-hidden="true">
-                      <!-- TODO: swap for products actually in the kit -->
-                      <span class="hp-fk3__peek"><img src="./assets/KitchenCleanerWebsiteImages-01.jpg" alt="" loading="lazy"></span>
-                      <span class="hp-fk3__peek"><img src="./assets/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827(5).jpg" alt="" loading="lazy"></span>
-                      <span class="hp-fk3__peek"><img src="./assets/Website_Images_Metal_Cleaner-01(1).jpg" alt="" loading="lazy"></span>
-                      <span class="hp-fk3__lid"><span class="hp-fk3__bow"></span></span>
-                      <span class="hp-fk3__body"></span>
-                    </div>
-                    <div class="hp-fk3__kit-txt">
-                      <span class="hp-fk3__kit-name">Festive Starter Kit</span>
-                      <span class="hp-fk3__kit-price">₹499</span>
-                      <span class="hp-fk3__kit-sub">5 products, ~₹100 each</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="hp-fk3__foot">
-                  <span>Perfect for gifting this season</span>
-                  <span class="hp-fk3__go">View festive kit
-                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <script>
-              (function () {
-                var root = document.querySelector('[data-hp-festive-kit-v2]');
-                if (!root) return;
-                if ('IntersectionObserver' in window) {
-                  var io = new IntersectionObserver(function (entries) {
-                    if (entries[0].isIntersecting) { root.classList.add('is-in'); io.disconnect(); }
-                  }, { threshold: 0.5 });
-                  io.observe(root);
-                } else {
-                  root.classList.add('is-in');
-                }
-                root.querySelector('[data-hp-fk3-link]').addEventListener('click', function () {
-                  try {
-                    window.dataLayer = window.dataLayer || [];
-                    window.dataLayer.push({ event: 'festive_kit_click', variant: 'v2_giftbox', source: 'pdp_tap_cleaner_above_fbt' });
-                  } catch (e) {}
-                });
-              })();
-            </script>
-            <!-- /Festive Starter Kit gift box v2 (below FBT) -->
-
-
 
         
     
