@@ -3665,13 +3665,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
 
 
-            <!-- Festive Starter Kit gift box v2 (above FBT) (Troopod) -->
+            <!-- Festive Starter Kit gift box v2 (above FBT) -->
             <style>
-              .hp-fk3 { container-type: inline-size; --teal: #006056; --ink: #0a1f1c; --gold: #f5a623; --gold-deep: #c98a12; --cream: #fff8ea; --line: #d4b062;
-                margin: 12px 0 4px; font-family: 'Poppins', sans-serif; color: var(--ink); }
+              .hp-fk3 { container-type: inline-size; --teal: #006056; --ink: #0a1f1c; --gold: #f5a623; --gold-deep: #c98a12; --cream: #fff8ea; --line: #d4b062; --s: 1.25;
+                margin: 12px 0 6px; font-family: 'Poppins', sans-serif; color: var(--ink); }
               .hp-fk3__card { position: relative; display: block; text-decoration: none; color: inherit; overflow: hidden;
-                border: 1.5px solid var(--line); border-radius: 14px; padding: 16px 12px 0;
-                background: radial-gradient(circle at 85% 30%, rgba(245, 166, 35, 0.18), transparent 50%), var(--cream);
+                border: 1.5px solid var(--line); border-radius: 16px; padding: 22px 14px 0;
+                background: radial-gradient(circle at 82% 55%, rgba(245, 166, 35, 0.22), transparent 48%), var(--cream);
                 transition: box-shadow 0.3s ease, border-color 0.3s ease; }
               .hp-fk3__card:hover { border-color: #b8862b; box-shadow: 0 10px 24px -14px rgba(140, 96, 20, 0.6); }
               .hp-fk3__card:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
@@ -3684,18 +3684,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   radial-gradient(ellipse 2.2px 3.6px at 18px 7px, #3f8f4a 98%, transparent) 0 0 / 36px 12px repeat-x,
                   linear-gradient(#b8862b, #b8862b) 0 3px / 100% 1px no-repeat; }
 
-              .hp-fk3__head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
-              .hp-fk3__title { margin: 0; font-size: 14px; font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; }
-              .hp-fk3__title b { color: var(--teal); }
-              .hp-fk3__eyebrow { display: block; font-size: 9.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 1px; }
-              .hp-fk3__tag { flex-shrink: 0; font-size: 9.5px; font-weight: 700; color: #6b4a00; background: #ffe2a8; border-radius: 999px; padding: 2px 7px; white-space: nowrap; }
+              .hp-fk3__main { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; column-gap: 10px; }
 
-              .hp-fk3__row { display: block; padding-top: 26px; }
+              .hp-fk3__copy { align-self: center; padding-bottom: 10px; min-width: 0; }
+              .hp-fk3__meta { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 8px; }
+              .hp-fk3__eyebrow { font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold-deep); line-height: 1; }
+              .hp-fk3__tag { font-size: 9.5px; font-weight: 700; color: #6b4a00; background: #ffe2a8; border-radius: 999px; padding: 3px 7px; line-height: 1.1; white-space: nowrap; }
+              .hp-fk3__title { margin: 0; font-size: 17px; font-weight: 800; line-height: 1.15; letter-spacing: -0.01em; }
+              .hp-fk3__title b { display: block; margin-top: 2px; font-size: 28px; line-height: 1.05; letter-spacing: -0.02em; color: var(--teal); }
+              .hp-fk3__sub { margin: 6px 0 0; font-size: 11.5px; font-weight: 600; color: #6b5a33; line-height: 1.35; }
+              .hp-fk3__sub span { display: block; }
+              .hp-fk3__sub span:first-child { color: var(--ink); font-weight: 700; }
 
-              .hp-fk3__kit { display: grid; grid-template-columns: 104px minmax(0, 1fr); align-items: end; gap: 14px; min-width: 0; padding-left: 4px; }
-
-              /* gift box */
-              .hp-fk3__box { position: relative; width: 104px; height: 88px; }
+              /* gift box: drawn at base size, scaled by --s; the wrap reserves the scaled footprint */
+              .hp-fk3__boxwrap { position: relative; justify-self: end; width: calc(116px * var(--s)); height: calc(112px * var(--s)); }
+              .hp-fk3__box { position: absolute; left: 0; bottom: 0; width: 104px; height: 88px; transform: scale(var(--s)); transform-origin: bottom left; }
               .hp-fk3__peek { position: absolute; bottom: 18px; width: 42px; height: 42px; border-radius: 10px; overflow: hidden; background: #dbeced;
                 border: 2px solid #ffffff; box-shadow: 0 2px 6px rgba(10, 31, 28, 0.15); transform: translateY(26px) rotate(var(--r)); opacity: 0;
                 transition: transform 0.7s cubic-bezier(.2, .9, .25, 1.15), opacity 0.4s ease; transition-delay: var(--d); }
@@ -3715,37 +3718,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               .hp-fk3.is-in .hp-fk3__peek { transform: translateY(0) rotate(var(--r)); opacity: 1; }
               .hp-fk3.is-in .hp-fk3__lid { transform: translate(10px, -42px) rotate(14deg); }
 
-              .hp-fk3__kit-txt { padding-bottom: 8px; min-width: 0; }
-              .hp-fk3__kit-name { display: block; font-size: 11.5px; font-weight: 800; line-height: 1.2; }
-              .hp-fk3__kit-price { display: block; margin-top: 1px; font-size: 18px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; color: var(--teal); }
-              .hp-fk3__kit-sub { display: block; font-size: 10.5px; font-weight: 600; color: #6b5a33; line-height: 1.25; }
-
-              .hp-fk3__foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 0 -12px; padding: 6px 12px;
-                border-top: 1px dashed var(--line); background: rgba(255, 226, 168, 0.35); font-size: 10.5px; font-weight: 600; color: #6b5a33; }
+              .hp-fk3__foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 0 -14px; padding: 8px 14px;
+                border-top: 1px dashed var(--line); background: rgba(255, 226, 168, 0.35); font-size: 11px; font-weight: 600; color: #6b5a33; }
               .hp-fk3__go { display: inline-flex; align-items: center; gap: 3px; color: var(--teal); font-weight: 700; white-space: nowrap; border-bottom: 1px solid currentColor; }
               .hp-fk3__go svg { width: 12px; height: 12px; transition: transform 0.25s ease; }
               .hp-fk3__card:hover .hp-fk3__go svg { transform: translateX(3px); }
 
-              @media (max-width: 400px) {
-                .hp-fk3__card { padding: 15px 10px 0; }
-                .hp-fk3__foot { margin: 0 -10px; padding: 6px 10px; }
-                .hp-fk3__title { font-size: 13.5px; }
-                .hp-fk3__kit-price { font-size: 17px; }
+              @container (max-width: 330px) {
+                .hp-fk3__boxwrap { --s: 1.1; }
+                .hp-fk3__title { font-size: 15.5px; }
+                .hp-fk3__title b { font-size: 25px; }
               }
               @container (min-width: 480px) {
-                .hp-fk3__card { padding: 20px 14px 0; border-radius: 16px; }
-                .hp-fk3__head { margin-bottom: 8px; }
-                .hp-fk3__row { padding-top: 50px; }
-                .hp-fk3__eyebrow { font-size: 10.5px; margin-bottom: 2px; }
-                .hp-fk3__title { font-size: 16px; }
+                .hp-fk3__card { padding: 26px 22px 0; }
+                .hp-fk3__main { column-gap: 24px; }
+                .hp-fk3__boxwrap { --s: 1.55; margin-right: 6px; }
+                .hp-fk3__copy { padding-bottom: 14px; }
+                .hp-fk3__meta { flex-direction: row; align-items: center; gap: 8px; margin-bottom: 10px; }
+                .hp-fk3__eyebrow { font-size: 11px; }
                 .hp-fk3__tag { font-size: 10px; padding: 3px 8px; }
-                .hp-fk3__kit { grid-template-columns: 120px auto; gap: 12px; padding-left: 0; }
-                .hp-fk3__box { transform: scale(1.15); transform-origin: bottom left; margin-top: -13px; }
-                .hp-fk3__kit-txt { padding-bottom: 12px; }
-                .hp-fk3__kit-name { font-size: 13px; }
-                .hp-fk3__kit-price { font-size: 22px; margin-top: 2px; }
-                .hp-fk3__kit-sub { font-size: 11px; }
-                .hp-fk3__foot { margin: 0 -14px; padding: 9px 14px; font-size: 11.5px; }
+                .hp-fk3__title { font-size: 21px; }
+                .hp-fk3__title b { font-size: 34px; }
+                .hp-fk3__sub { font-size: 13px; margin-top: 8px; }
+                .hp-fk3__foot { margin: 0 -22px; padding: 10px 22px; font-size: 12px; }
               }
               @media (prefers-reduced-motion: reduce) {
                 .hp-fk3__peek, .hp-fk3__lid, .hp-fk3__go svg, .hp-fk3__card { transition: none; }
@@ -3756,29 +3751,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <!-- TODO: replace href with the live Festive Starter Kit product URL -->
               <a class="hp-fk3__card" href="/products/festive-starter-kit" data-hp-fk3-link aria-label="Festive special: Starter Kit, 6 products at ₹499. View the festive kit">
                 <span class="hp-fk3__toran" aria-hidden="true"></span>
-                <div class="hp-fk3__head">
-                  <div>
-                    <span class="hp-fk3__eyebrow">Festive special</span>
-                    <p class="hp-fk3__title">Get 6 products at <b>₹499</b></p>
+
+                <div class="hp-fk3__main">
+                  <div class="hp-fk3__copy">
+                    <div class="hp-fk3__meta">
+                      <span class="hp-fk3__eyebrow">Festive special</span>
+                      <span class="hp-fk3__tag">Limited time</span>
+                    </div>
+                    <p class="hp-fk3__title">Get 6 products <b>at ₹499</b></p>
+                    <p class="hp-fk3__sub"><span>Festive Starter Kit</span><span>~₹83 per product</span></p>
                   </div>
-                  <span class="hp-fk3__tag">Limited time</span>
-                </div>
 
-                <div class="hp-fk3__row">
-
-                  <div class="hp-fk3__kit">
-                    <div class="hp-fk3__box" aria-hidden="true">
+                  <div class="hp-fk3__boxwrap" aria-hidden="true">
+                    <div class="hp-fk3__box">
                       <!-- TODO: swap for products actually in the kit -->
                       <span class="hp-fk3__peek"><img src="./assets/KitchenCleanerWebsiteImages-01.jpg" alt="" loading="lazy"></span>
                       <span class="hp-fk3__peek"><img src="./assets/WebsiteImagesLimeScale-01_7dde5639-eabb-439c-a335-dd2493db5827(5).jpg" alt="" loading="lazy"></span>
                       <span class="hp-fk3__peek"><img src="./assets/Website_Images_Metal_Cleaner-01(1).jpg" alt="" loading="lazy"></span>
                       <span class="hp-fk3__lid"><span class="hp-fk3__bow"></span></span>
                       <span class="hp-fk3__body"></span>
-                    </div>
-                    <div class="hp-fk3__kit-txt">
-                      <span class="hp-fk3__kit-name">Festive Starter Kit</span>
-                      <span class="hp-fk3__kit-price">₹499</span>
-                      <span class="hp-fk3__kit-sub">6 products, ~₹83 each</span>
                     </div>
                   </div>
                 </div>
@@ -3811,7 +3802,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 });
               })();
             </script>
-            <!-- /Festive Starter Kit gift box v2 (above FBT) -->
+            <!-- /Festive Starter Kit gift box v2 -->
 
             <div class="prod__kc-fbt" data-kc-fbt="" data-offer2-total="37900" data-offer3-total="54900" data-cart-redirect="1" data-kc-fbt-inited="1">
               <div class="kc-fbt__header">
