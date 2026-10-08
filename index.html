@@ -3718,20 +3718,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               .hp-fk3.is-in .hp-fk3__peek { transform: translateY(0) rotate(var(--r)); opacity: 1; }
               .hp-fk3.is-in .hp-fk3__lid { transform: translate(10px, -42px) rotate(14deg); }
 
-              .hp-fk3__foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0 -14px; padding: 10px 10px 10px 14px;
+              .hp-fk3__foot { display: flex; align-items: center; margin: 0 -14px; padding: 10px 12px;
                 border-top: 1px dashed var(--line); background: rgba(255, 226, 168, 0.45); }
-              .hp-fk3__deal { display: flex; align-items: center; gap: 7px; min-width: 0; margin: 0; font-size: 11.5px; font-weight: 700; color: var(--ink); line-height: 1.25; }
-              .hp-fk3__dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: #e8590c; box-shadow: 0 0 0 0 rgba(232, 89, 12, 0.5); animation: hpFk3Pulse 1.6s ease-out infinite; }
-              .hp-fk3__deal-label { flex: none; color: var(--gold-deep); text-transform: uppercase; font-size: 9.5px; letter-spacing: 0.06em; }
-              .hp-fk3__rotator { position: relative; display: grid; min-width: 0; height: 1.25em; overflow: hidden; }
-              .hp-fk3__rotator span { grid-area: 1 / 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--teal);
-                transform: translateY(110%); opacity: 0; transition: transform 0.55s cubic-bezier(.2, .9, .25, 1), opacity 0.4s ease; }
-              .hp-fk3__rotator span.is-active { transform: translateY(0); opacity: 1; animation: hpFk3Blink 0.9s ease 0.55s 2; }
-              .hp-fk3__rotator span.is-leaving { transform: translateY(-110%); opacity: 0; }
-              @keyframes hpFk3Pulse { 0% { box-shadow: 0 0 0 0 rgba(232, 89, 12, 0.5); } 70%, 100% { box-shadow: 0 0 0 7px rgba(232, 89, 12, 0); } }
-              @keyframes hpFk3Blink { 50% { opacity: 0.35; } }
 
-              .hp-fk3__atc { position: relative; flex: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 40px; padding: 0 16px;
+              .hp-fk3__atc { position: relative; flex: 1 1 auto; width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 40px; padding: 0 16px;
                 border: 0; border-radius: 999px; overflow: hidden; cursor: pointer; font: 700 13px/1 'Poppins', sans-serif; color: #fff; white-space: nowrap;
                 background: linear-gradient(160deg, #0a7a6d, var(--teal) 55%, #004a42); box-shadow: inset 0 0 0 1.5px #ffc65a, 0 6px 14px -6px rgba(0, 74, 66, 0.7);
                 transition: transform 0.2s ease, box-shadow 0.2s ease; }
@@ -3746,12 +3736,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               .hp-fk3__atc.is-added::after { animation: none; }
               @keyframes hpFk3Shine { from { background-position: 150% 0; } to { background-position: -100% 0; } }
 
-              @container (max-width: 360px) {
-                .hp-fk3__deal { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 6px; row-gap: 2px; }
-                .hp-fk3__dot { grid-row: 1 / 3; }
-                .hp-fk3__deal-label, .hp-fk3__rotator { grid-column: 2; }
-                .hp-fk3__atc { padding: 0 13px; font-size: 12.5px; }
-              }
               @container (max-width: 330px) {
                 .hp-fk3__boxwrap { --s: 1.1; }
                 .hp-fk3__title { font-size: 15.5px; }
@@ -3768,14 +3752,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 .hp-fk3__title { font-size: 21px; }
                 .hp-fk3__title b { font-size: 34px; }
                 .hp-fk3__sub { font-size: 13px; margin-top: 8px; }
-                .hp-fk3__foot { margin: 0 -22px; padding: 12px 14px 12px 22px; }
-                .hp-fk3__deal { font-size: 13px; gap: 8px; }
-                .hp-fk3__deal-label { font-size: 10.5px; }
-                .hp-fk3__atc { min-height: 44px; padding: 0 22px; font-size: 14px; }
+                .hp-fk3__foot { margin: 0 -22px; padding: 12px 18px; }
+                .hp-fk3__atc { min-height: 46px; padding: 0 22px; font-size: 14.5px; }
               }
               @media (prefers-reduced-motion: reduce) {
-                .hp-fk3__peek, .hp-fk3__lid, .hp-fk3__card, .hp-fk3__atc, .hp-fk3__rotator span { transition: none; }
-                .hp-fk3__dot, .hp-fk3__atc::after, .hp-fk3__rotator span.is-active { animation: none; }
+                .hp-fk3__peek, .hp-fk3__lid, .hp-fk3__card, .hp-fk3__atc { transition: none; }
+                .hp-fk3__atc::after { animation: none; }
               }
             </style>
 
@@ -3809,14 +3791,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </a>
 
                 <div class="hp-fk3__foot">
-                  <p class="hp-fk3__deal" aria-live="polite">
-                    <span class="hp-fk3__dot" aria-hidden="true"></span>
-                    <span class="hp-fk3__deal-label">Festive Deal:</span>
-                    <span class="hp-fk3__rotator" data-hp-fk3-rotator>
-                      <span class="is-active">Buy 3 @ ₹299</span>
-                      <span>Buy 6 Trial Pack @ ₹499</span>
-                    </span>
-                  </p>
                   <!-- TODO: set data-variant-id to the live Festive Cleaning Kit variant ID -->
                   <button type="button" class="hp-fk3__atc" data-hp-fk3-atc data-variant-id="">
                     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.5 3h2l1.6 9.2a1.5 1.5 0 0 0 1.5 1.3h6.9a1.5 1.5 0 0 0 1.5-1.2L17 6.5H5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="16.8" r="1.2" fill="currentColor"/><circle cx="14.5" cy="16.8" r="1.2" fill="currentColor"/></svg>
@@ -3844,22 +3818,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   } catch (e) {}
                 }
                 root.querySelector('[data-hp-fk3-link]').addEventListener('click', function () { track('festive_kit_click'); });
-
-                // rotating deal copy
-                var lines = root.querySelectorAll('[data-hp-fk3-rotator] > span');
-                var current = 0;
-                var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-                if (lines.length > 1) {
-                  setInterval(function () {
-                    var prev = lines[current];
-                    current = (current + 1) % lines.length;
-                    prev.classList.remove('is-active');
-                    prev.classList.add('is-leaving');
-                    lines[current].classList.remove('is-leaving');
-                    lines[current].classList.add('is-active');
-                    setTimeout(function () { prev.classList.remove('is-leaving'); }, reduceMotion ? 0 : 600);
-                  }, 3200);
-                }
 
                 // add to cart
                 var atc = root.querySelector('[data-hp-fk3-atc]');
@@ -6008,7 +5966,7 @@ Each product comes in a bottle which is made from 100% recycled plastic that's n
 
     bannerSliders.forEach(function (slider) {
       const autoplay = slider.dataset.autoplay === 'true';
-      const interval = parseInt(slider.dataset.interval || 4) * 1000;
+      const interval = parseFloat(slider.dataset.interval || 4) * 1000;
       const texts = slider.querySelectorAll('.sticky-atc-bar__banner-text');
 
       if (!autoplay || texts.length <= 1) return;
@@ -6047,9 +6005,16 @@ Each product comes in a bottle which is made from 100% recycled plastic that's n
 
 
 </div><div id="shopify-section-template--23156897415404__floating_atc" class="shopify-section"><div id="floating-atc-root" class="floating-atc-root" data-query-param="atc_version" data-default-version="pack_selector" data-product-id="8701643260140" data-product-name="Tap Cleaner &amp; Limescale Remover" data-currency="INR"><div class="floating-atc-variant floating-atc floating-atc--pack-selector pack_selector is-visible" data-atc-variant="pack_selector" data-id="floating-atc"><div class="sticky-atc-bar__banner">
-        <div class="sticky-atc-bar__banner-slider" data-autoplay="true" data-interval="4">
-          <p class="sticky-atc-bar__banner-text active" data-index="0"><a href="https://www.happi-planet.com/pages/byob"><span class="sticky-atc-bar__hot-deal">Hot Deal</span>Buy 3 Products @549
-</a></p>
+        <div class="sticky-atc-bar__banner-slider" data-autoplay="true" data-interval="3.5">
+          <style>
+            .sticky-atc-bar__hot-deal--festive { background: linear-gradient(160deg, #ffc65a, #f5a623 55%, #c98a12); color: #0a1f1c; }
+            .sticky-atc-bar__banner-text--festive.active .sticky-atc-bar__deal-copy { animation: stickyDealBlink 0.8s ease 0.6s 2; }
+            @keyframes stickyDealBlink { 50% { opacity: 0.3; } }
+            @media (prefers-reduced-motion: reduce) { .sticky-atc-bar__banner-text--festive.active .sticky-atc-bar__deal-copy { animation: none; } }
+          </style>
+          <p class="sticky-atc-bar__banner-text sticky-atc-bar__banner-text--festive active" data-index="0"><a href="https://www.happi-planet.com/pages/byob"><span class="sticky-atc-bar__hot-deal">Hot Deal</span><span class="sticky-atc-bar__deal-copy">Buy 3 @ 549</span></a></p>
+          <!-- TODO: point to the live Buy 6 Trial Pack product URL -->
+          <p class="sticky-atc-bar__banner-text sticky-atc-bar__banner-text--festive" data-index="1"><a href="/products/festive-starter-kit"><span class="sticky-atc-bar__hot-deal sticky-atc-bar__hot-deal--festive">Festive Deal</span><span class="sticky-atc-bar__deal-copy">Buy 6 Trial Pack @ 499</span></a></p>
         </div>
       </div><div class="floating-atc__content">
       <input type="hidden" value="45943964860652" id="floating-variant-id">
