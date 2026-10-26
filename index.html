@@ -3480,6 +3480,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+    <!-- Festive Deal marquee (mirrors the sticky cart deal copy) -->
+    <style>
+      .hp-deal-marquee { display: block; overflow: hidden; background: #006056; color: #fff; text-decoration: none; border-bottom: 1px solid rgba(0,0,0,0.08); }
+      .hp-deal-marquee__track { display: flex; width: max-content; animation: hpDealMarquee 26s linear infinite; }
+      .hp-deal-marquee:hover .hp-deal-marquee__track { animation-play-state: paused; }
+      .hp-deal-marquee__group { display: flex; flex: none; }
+      .hp-deal-marquee__item { display: inline-flex; align-items: center; gap: 10px; padding: 9px 22px; white-space: nowrap; font-size: 13px; font-weight: 700; letter-spacing: 0.01em; }
+      .hp-deal-marquee__item::after { content: '✦'; margin-left: 22px; color: #ffc65a; font-size: 11px; }
+      .hp-deal-marquee__tag { display: inline-flex; align-items: center; padding: 3px 8px; border-radius: 4px; background: linear-gradient(160deg, #ffc65a, #f5a623 55%, #c98a12); color: #0a1f1c; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; }
+      @keyframes hpDealMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+      @media (min-width: 990px) { .hp-deal-marquee__item { padding: 10px 28px; font-size: 14px; } .hp-deal-marquee__item::after { margin-left: 28px; } }
+      @media (prefers-reduced-motion: reduce) { .hp-deal-marquee__track { animation: none; } }
+    </style>
+    <!-- TODO: point to the live Buy 6 Trial Pack product URL -->
+    <a class="hp-deal-marquee" href="/products/festive-starter-kit" aria-label="Festive Deal: Buy 6 Trial Pack @ 499">
+      <div class="hp-deal-marquee__track" aria-hidden="true">
+        <div class="hp-deal-marquee__group">
+          <span class="hp-deal-marquee__item"><span class="hp-deal-marquee__tag">Festive Deal</span>Buy 6 Trial Pack @ 499</span>
+          <span class="hp-deal-marquee__item"><span class="hp-deal-marquee__tag">Festive Deal</span>Buy 6 Trial Pack @ 499</span>
+          <span class="hp-deal-marquee__item"><span class="hp-deal-marquee__tag">Festive Deal</span>Buy 6 Trial Pack @ 499</span>
+          <span class="hp-deal-marquee__item"><span class="hp-deal-marquee__tag">Festive Deal</span>Buy 6 Trial Pack @ 499</span>
+        </div>
+        <div class="hp-deal-marquee__group">
+          <span class="hp-deal-marquee__item"><span class="hp-deal-marquee__tag">Festive Deal</span>Buy 6 Trial Pack @ 499</span>
+          <span class="hp-deal-marquee__item"><span class="hp-deal-marquee__tag">Festive Deal</span>Buy 6 Trial Pack @ 499</span>
+          <span class="hp-deal-marquee__item"><span class="hp-deal-marquee__tag">Festive Deal</span>Buy 6 Trial Pack @ 499</span>
+          <span class="hp-deal-marquee__item"><span class="hp-deal-marquee__tag">Festive Deal</span>Buy 6 Trial Pack @ 499</span>
+        </div>
+      </div>
+    </a>
     <main id="main-content" role="main">
       <div id="shopify-section-template--23156897415404__main" class="shopify-section">
 
